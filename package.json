@@ -1,0 +1,25 @@
+{
+  "name": "nodesecurity",
+  "version": "1.0.0",
+  "description": "Ejemplos básicos de vulnerabilidades, prevención y buenas prácticas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "CiberSecurity",
+    "NodeJS",
+    "Javascript",
+    "TScript"
+  ],
+  "author": "Rafael Ramos",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "4.18.2",
+    "nodemon": "2.0.22"
+  },
+  "dependencies": {
+    "express-handlebars": "7.0.7",
+    "handlebars": "4.7.7"
+  }
+}
