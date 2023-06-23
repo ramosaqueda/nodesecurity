@@ -1,5 +1,6 @@
 const express = require('express');
 const rutas_xss = require('./XSS/routes');
+const rutas_xee = require('./XEE/route');
 const { engine } = require("express-handlebars");
 const app = express();
 const port = 3000;
@@ -26,6 +27,8 @@ app.use('/xss', rutas_xss);
 app.get('/', (req, res) =>  {
     res.render('home');
 } );
+
+app.use('/xee', rutas_xee)
 
 
          

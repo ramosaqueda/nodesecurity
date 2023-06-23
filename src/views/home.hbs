@@ -44,5 +44,24 @@ Los atacantes pueden insertar comandos SQL maliciosos para obtener información 
       </div>
     </div>
   </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">XML XEE</h5>
+        <p class="card-text">XML External Entity es una vulnerabilidad presente en las aplicaciones que analizan entradas XML. 
+
+Por ejemplo, si un parser de XML acepta entidades externas (un tipo de entidad personalizada cuyos valores específicos se cargan desde los archivos DTD en los que están escritos), un atacante puede intervenir su contenido para leer archivos del file system o efectuar ataques como un Server Side Request Forgery (SSRF), entre otros.</p>
+
+    <p class="card-text">Se aconseja Deshabilitar el procesamiento de definición del tipo de documento (DTD) y entidades externas XML de la aplicación. 
+Asegurar que los archivos filtrados no contengan ningún tipo de información crítica o relevante, implementando la validación positiva (“whitelisting”) de la entrada del lado del servidor, el filtrado o la sanitización 
+Utilizar formatos de datos menos complejos como JSON y evitar la serialización de datos sensibles siempre que sea posible.
+Parchear o actualizar todos los procesadores y bibliotecas XML que son utilizados por el aplicativo.
+Verificar que la funcionalidad de carga de archivos XML o XSL valida el XML entrante.</p>
+       <a href="xee" class="btn btn-primary">Vamos a probarlo</a>
+      </div>
+    </div>
+  </div>
+
 </div>
   </div>
